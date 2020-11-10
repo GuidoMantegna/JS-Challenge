@@ -1,0 +1,45 @@
+body {
+    margin: 0; 
+    background: url('./Imagenes/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+h3 {
+    text-align: center;
+    text-shadow: 1px 3px black;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.key {
+    color: rgb(218, 216, 216);
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 100px;
+    transition: 
+    transform .5s, 
+    box-shadow 0.5s, 
+    letter-spacing 0.5s,
+    background-color 0.5s;
+}
+
+.key-press {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.9);
+    letter-spacing: 3px;
+    background-color: rgba(49, 190, 56, 0.25);  
+}
