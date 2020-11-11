@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #2a363b;
+    color: cornsilk;
+    font-size: 2.5em;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #ff847c;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+    background: rgba(225, 225, 225, 0.1);
+}
+
+.clock::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 250px;
+    left: 246px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.twelve {
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+.three {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+.six {
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+}
+.nine {
+    position: absolute;
+    top: 45%;
+    left: 5px;   
+}
+
+.hour-hand {
+    position: absolute;
+    height: 10px;
+    width: 125px;
+    background: royalblue;
+    left: 50%;
+    top: 50%;
+    transform-origin: left;
+    border-radius: 3px;
+}
+
+.min-hand {
+    position: absolute;
+    height: 7.5px;
+    width: 175px;
+    background: tomato;
+    left: 50%;
+    top: 50%;
+    transform-origin: left;
+    border-radius: 3px;
+}
+
+.seconds-hand {
+    position: absolute;
+    height: 5px;
+    width: 190px;
+    background: #aaa;
+    left: 50%;
+    top: 50%;
+    transform-origin: left;
+    border-radius: 3px;
+    transition: transform .5s cubic-bezier(.01,-0.6,.93,1.84);
+}
+
+.digital-clock {
+    background:  rgba(255, 132, 124, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    height: 50px;
+    width: 200px;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: .75em;
+    margin: 2px;
+    text-align: center;
+}
