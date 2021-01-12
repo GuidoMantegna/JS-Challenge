@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: rgb(95, 95, 95);
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 60%;
+    
+}
+
+.img-container {
+    margin: 5px;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    border-radius: 5px;
+    transition: transform 0.5s;
+    cursor: grab;
+}
+
+.img-container:hover {
+    transform: scale(1.25);
+}
+
+img {
+    height: 250px;
+    transform-origin: right top;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}

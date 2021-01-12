@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+label {
+    padding: 10px 30px;
+    background: rgb(64, 110, 194);
+    width: 12%;
+    color: cornsilk;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border: 1px solid rgb(40, 80, 153);
+    border-bottom: 3px solid rgb(40, 80, 153);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.main-container {
+    background: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: cornsilk;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.countdown {
+    display: flex;
+}
+
+.countdown p {
+    font-size: 8em;
+}
+
+.back-time {
+    display: flex;
+}
+
+.back-time p:nth-child(1) {
+    margin-right: 10px;
+}
+
+.back-time p {
+    font-size: 3em;
+}
