@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="video-box">
+            <video 
+            class="html-video" 
+            src="https://github.com/LeonidasEsteban/responsive-design-portafolio/blob/master/videos/f8.mp4?raw=true" 
+            >
+            </video>
+            
+            <div class="panel-control">
+
+                <div class="progress">
+                    <div class="progress-percentage"></div>
+                </div>
+
+                <div class="controls">
+
+                    <div class="play">
+                        <i class="icon icon-play" id="play-pause"></i>
+                        <p class="time">00:00:00</p>
+                        <!-- <p>:</p>
+                        <p class="seconds">00</p> -->
+                    </div>
+
+                    <div class="volume">
+                        <i class="icon icon-volume-high"></i>
+                        <input class="vol-range" type="range">
+                    </div>
+
+                    <div class="speed">
+                        <i class="icon icon-first"></i>
+                        <p class="speed-num">1x</p>
+                        <i class="icon icon-last"></i>
+                        <input class="speed-range" type="range">
+                    </div>     
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

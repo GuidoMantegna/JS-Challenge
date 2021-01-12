@@ -1,0 +1,33 @@
+body {
+    background: rgb(202, 188, 107);
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    background: rgb(252, 245, 245);
+    width: 40%;
+    padding: 1em;
+    color: rgb(44, 40, 40);
+    box-shadow: 5px 5px 5px rgba(44, 40, 40, 0.5);
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-align: justify;
+    overflow: hidden;
+}
+
+img {
+    margin: 10px;
+}
+
+.right {
+    float: right;
+    transform: translateX(300px);
+    transition: transform 1s;
+}
+
+.left {
+    float: left;
+    transform: translateX(-400px);
+    transition: transform 1s;
+}

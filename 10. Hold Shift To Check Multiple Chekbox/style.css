@@ -1,0 +1,42 @@
+body {
+    background: rgb(255, 208, 0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.inbox {
+    background: rgb(255, 255, 255);
+    width: 30%;
+    margin-top: 2em;
+    border-radius: 3px;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    color: rgb(107, 107, 107);
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.item:nth-child(odd) {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+input {
+    margin: 0;
+    justify-self: center;
+}
+
+label {
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    
+}
+
+.label-checked {
+    text-decoration: line-through;
+}

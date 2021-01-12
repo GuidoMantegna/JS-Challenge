@@ -1,0 +1,142 @@
+:root {
+  --progress-bar-width: 0%;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?av6j7z');
+  src:  url('fonts/icomoon.eot?av6j7z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?av6j7z') format('truetype'),
+    url('fonts/icomoon.woff?av6j7z') format('woff'),
+    url('fonts/icomoon.svg?av6j7z#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-volume-decrease:before {
+  content: "\e902";
+}
+.icon-volume-increase:before {
+  content: "\e903";
+}
+.icon-volume-high:before {
+  content: "\e904";
+}
+.icon-last:before {
+  content: "\e905";
+}
+.icon-first:before {
+  content: "\e906";
+}
+.icon-pause:before {
+  content: "\e900";
+}
+.icon-play:before {
+  content: "\e901";
+}
+i {
+  color: white;
+  font-size: 1.25em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body {
+  background: rgb(226, 224, 225);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 2em;
+}
+
+.video-box {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+}
+
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+.panel-control {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(75px);
+  transition: transform .5s;
+}
+
+.video-box:hover .panel-control {
+  transform: translateY(0);
+}
+
+.progress {
+  width: 100%;
+  height: .85em;
+  background: rgba(70, 70, 70, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.progress-percentage {
+  width: var(--progress-bar-width);
+  height: .85em;
+  background: tomato;
+  position: absolute;
+  bottom: 0;
+}
+
+.controls {
+  width: 100%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50%;
+}
+
+.play {
+  display: flex;
+}
+
+.volume {
+  display: flex;
+}
+
+.speed {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+  font-size: .75em;
+  margin: 0;
+  align-self: center;
+}
+
