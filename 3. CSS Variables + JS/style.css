@@ -1,0 +1,104 @@
+:root {
+    --body-color: cornsilk;
+    --font-color: rosybrown;
+    --container-color: rgba(128, 125, 125, 0.1);
+    --heart-color: red;
+    --love-level: 50px;
+    --beat-time: 3s;
+}
+
+body {
+    background: var(--body-color);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+.main-container {
+    width: 80%;
+    height: 75%;
+    padding: 30px;
+    background-color: var(--container-color);
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.custom-menu {
+    display: grid;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.love,
+.anxiety {
+    height: 2px;
+    width: 50%;
+}
+
+.color-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    width: 50px;
+    height: 20px;
+}
+
+.heart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.heart {
+    width: var(--love-level);
+    height: var(--love-level);  
+    background: var(--heart-color);
+    position: relative;
+    transform: rotate(45deg);
+    animation: beat var(--beat-time) infinite;
+}
+
+.heart::after,
+.heart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--love-level);
+    height: var(--love-level);
+    background-color: var(--heart-color);
+    border-radius: 50%;
+}
+ 
+.heart::before {
+    top: 0;
+    left: -50%;
+}
+ 
+.heart::after {
+    top: -50%;
+    left: 0;
+    
+}
+ 
+@keyframes beat {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+        transform: rotate(45deg) scale(2);
+    }
+}
