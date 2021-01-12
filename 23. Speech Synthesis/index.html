@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <title>Speech Synthesis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="voiceinator">
+        <h1>The Voicenator 5000</h1>
+        <select name="voice" id="voices">
+            <option value="">Select a voice</option>
+        </select>
+        <label for="rate">Rate:</label>
+        <input name="rate" type="range" min="0" max="2" value="1" step="0.1">
+
+        <label for="pitch">Pitch:</label>
+        <input name="pitch" type="range" min="0" max="2" step="0.1">
+
+        <textarea name="text">Hello! Type what you want to hear.</textarea>
+        
+        <div class="buttons">
+            <button id="speak">Speak</button>
+            <button id="stop">Stop!</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

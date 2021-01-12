@@ -1,0 +1,90 @@
+body {
+    background-image: url(background.png);
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Padauk', sans-serif;
+    color: rgb(80, 80, 80);
+}
+
+.voiceinator{
+    background: oldlace;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 10px;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px #ccc;
+}
+
+h1 {
+    background: rgb(255, 255, 148);
+    margin-top: 0;
+    padding: 1em 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+select {
+    margin: 1em;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+select:focus {
+    outline: none;
+}
+
+label {
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+input {
+    margin: 1em;
+    height: 3px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    margin: 1em;
+    min-height: 100px;
+    border: none;
+    font-family: 'Padauk', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    background: rgb(255, 255, 148);
+    box-shadow: 3px 3px rgba(80, 80, 80, 0.5);
+    color: rgb(41, 41, 41);
+    padding: 0;
+    width: 40%;
+    height: 2.5em;
+    border-radius: 2px;
+    margin: 2em 0;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    outline-style: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
