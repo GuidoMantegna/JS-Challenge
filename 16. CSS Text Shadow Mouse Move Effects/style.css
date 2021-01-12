@@ -1,0 +1,21 @@
+:root {
+    --screen-X: 3px;
+    --screen-Y: 3px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #2a363b;
+}
+
+h1 {
+    color: #2a363b;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    font-weight: bold;
+    text-shadow: var(--screen-X) var(--screen-Y) 3px #ff847c;
+}

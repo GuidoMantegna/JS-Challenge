@@ -1,0 +1,33 @@
+body {
+    background: rgb(91, 94, 100);
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 60%;
+    background: cornsilk;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 7px 7px #ccc;
+    color: rgb(71, 71, 71);
+    font-family: sans-serif;
+    padding: 5%;
+}
+
+section > p {
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+.texts > p {
+    background: rgb(228, 220, 187);
+    padding: 1em;
+    border-radius: 3px;
+}
+i {
+    font-size: 0.75em;
+    color: brown;
+}

@@ -1,0 +1,143 @@
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-icon {
+    font-size: 10em;
+    color: rgba(245, 245, 245, 0.8);
+    margin: 30px;
+}
+
+.main-container {
+    background-color: rgba(255, 235, 205, 0.8);
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    font-family: 'Quicksand';
+    color: rgb(52, 58, 48);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    margin-top: 1em;
+    padding: 5px;
+    box-shadow: 2px 2px 3px rgba(161, 156, 145, 0.8);
+    border-radius: 2px;
+    position: relative;
+}
+
+.icon-local_restaurant {
+    position: absolute;
+    right: 1em;
+    font-size: 1.2em;
+}
+
+.icon-local_restaurant:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: rgb(141, 60, 60);
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.add-box {
+    height: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#add-input {
+    border: none;
+    border-radius: 2px;
+    width: 60%;
+}
+
+#add-input:focus {
+    outline: none;
+}
+
+.add-input-empty::placeholder {
+    font-weight: bold;
+    color: rgb(170, 75, 75);
+}
+
+.add-btn {
+    border: none;
+    color: rgb(52, 58, 48);
+    font-family: 'Quicksand';
+    font-weight: bold;
+    border-radius: 2px;
+    width: 35%;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 1px 1px 3px rgb(177, 177, 177);
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?yb4z4f');
+    src:  url('fonts/icomoon.eot?yb4z4f#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?yb4z4f') format('truetype'),
+      url('fonts/icomoon.woff?yb4z4f') format('woff'),
+      url('fonts/icomoon.svg?yb4z4f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-emoji_food_beverage:before {
+    content: "\e900";
+  }
+  .icon-local_restaurant:before {
+    content: "\e901";
+  }
+  .icon-food:before {
+    content: "\e902";
+  }
