@@ -1,5 +1,5 @@
-# JS-Challenge
-📢 A JavaScript Vanilla challenge with 30 different exercises
+# JavaScript Vanilla Challenge 
+📢 A JavaScript Vanilla challenge with 30 different exercises.
 
 #### 1. JavaScript Drum Kit
 🔧 DOM manipulation <br>
@@ -49,37 +49,90 @@
 ### 10. Hold Shift to Check Multiple Checkboxes
 🔧 Keyboard Events
 
+***
 #### 11. Custom HTML5 Video Player
 🔧 HTML5 <video> <br>
 🔧 HTMLMediaElement API
-    
+
+***
 #### 12. Key Sequence Detection (KONAMI CODE)
 🔧 Keyboard Events
 
+***
 #### 13. Slide In on Scroll
 🔧 CSS Float <br>
 🔧 Element.getBoundingClientRect() 
 
+***
 #### 14. Object and Arrays - Reference VS Copy
 🔧 Object.assign() | Array.from()
-    
+
+***
 #### 15. LocalStorage and Event Delegation
 🔧 LocalStorage API
-    
+
+***
 #### 16. CSS Text Shadow Mouse Move Effect
 🔧 Mouse Events
-    
+
+***
 #### 17. Sorting Band Names without articles
 🔧 array.methods() | string.methods()
-    
+ 
+***
 #### 18. Tally String Times with Reduce
 🔧 array.methods() | number.methods()
  
+***
 #### 19. Unreal Webcam Fun
 🔧 HTMLMediaElement API <br>
 🔧 Hardware Access 
 
+***
 #### 20. Native Speech Recognition
 🔧 HTMLMediaElement API <br>
 🔧 window.SpeechRecognition
+
+***
+#### 21. Geolocation based Speedometer and Compass
+🔧 Hardware access
+    
+***
+#### 22. Follow along links
+🔧 getBoundingClientRect() <br>
+🔧 Mouse events
+
+***
+#### 23. Speech Synthesis
+🔧 SpeechSynthesisUtterance() Object
+
+***
+#### 24. Sticky Nav
+🔧 Scroll Events
+    
+***
+#### 25. Event Capture, Propagation, Bubbling and Once
+🔧 Capture, Propagation, Bubbling
+    
+***
+#### 26. Stripe Follow Along Dropdown
+🔧 DOM & CSS Manipulation
+    
+***
+#### 27. Click and Drag to Scroll
+🔧 Mouse Events
+
+***
+#### 28. Video Speed Controller UI
+🔧 HTML5 <video> <br>
+🔧 HTMLMediaElement API
+    
+***
+#### 29. Countdown Clock
+🔧 Date Object
+    
+***
+#### 30. Whack A Mole Game
+🔧 setInterval() | setTimeout()
+
     
